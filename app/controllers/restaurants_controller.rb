@@ -12,6 +12,11 @@ class RestaurantsController < ApplicationController
       address: "58 Tulum BLVD",
       category: "Mexican"
     },
+    {
+      name: "Tulum Arte Cafe",
+      address: "68 Tulum BLVD",
+      category: "Cafe"
+    },
   ]
 
   def index
