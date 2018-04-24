@@ -21,6 +21,7 @@ class RestaurantsController < ApplicationController
 
   def index
     # initialize database to the restaurants controller to pass to the view
+    # define instance variable in order to give instance variable to the view to be displayed
     @restaurants = RESTAURANTS
   end
 end
