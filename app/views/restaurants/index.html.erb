@@ -12,3 +12,10 @@
     <li><%= category %></li>
   <% end %>
 </ul>
+
+<!-- loop on array decalred in the restaurants controller -->
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li><%= restaurant[:name] %> <%= restaurant[:address] %> </li>
+  <% end %>
+</ul>
