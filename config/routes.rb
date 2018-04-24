@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   # used to be `get 'pages#about'`
   get 'about', to: "pages#about"
 
+  # controller is called `pages`
+  # action is called `contact`
   get 'contact', to: "pages#contact"
 
   # introduce the `home` route to the `views/pages/home.html.erb`
