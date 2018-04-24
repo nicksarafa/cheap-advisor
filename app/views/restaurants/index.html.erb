@@ -2,3 +2,13 @@
 
 <!-- example of ERB time template injection -->
 <p>This time is <%= Time.now %></p>
+
+<!-- instantiate the food categories -->
+<% categories = %w(indian sushi mexican) %>
+
+<!-- list the categories -->
+<ul>
+  <% categories.each do |category| %>
+    <li><%= category %></li>
+  <% end %>
+</ul>
