@@ -3,3 +3,11 @@
 - same naming convention we used inside our routes file
 -->
 <h1>welcome home, obi one</h1>
+
+<ul>
+  <% @categories.each do |category| %>
+    <li>
+      <%= category %>
+    </li>
+  <% end %>
+</ul>
