@@ -5,5 +5,10 @@ Rails.application.routes.draw do
 
   get 'contact', to: "pages#contact"
 
+  # introduce the `home` route to the `views/pages/home.html.erb`
   get '/', to: "pages#home"
+
+  # we're routing to the restaurants controller instead of the pages controller
+  # prefer to call our "list" of restaurants "index"
+  get 'restaurants', to: "restaurants#index"
 end
